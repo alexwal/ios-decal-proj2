@@ -139,7 +139,7 @@
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="hangman1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="04D-bG-609">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="61u-oH-5Bp"/>
+                                    <constraint firstAttribute="height" constant="140" id="0SA-Ai-3qT"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -147,21 +147,21 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tqc-IA-9oP" firstAttribute="top" secondItem="XpT-zn-S6w" secondAttribute="topMargin" constant="19" id="49U-i5-GFy"/>
-                            <constraint firstItem="HYl-aG-PvE" firstAttribute="leading" secondItem="pwT-7o-OVh" secondAttribute="leading" id="6Nw-fY-EfX"/>
-                            <constraint firstItem="04D-bG-609" firstAttribute="top" secondItem="ENg-ny-XH9" secondAttribute="bottom" constant="42" id="H5P-ug-Buc"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="leading" secondItem="pwT-7o-OVh" secondAttribute="leading" id="4FA-Ad-klz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3VK-i8-V1r" secondAttribute="trailing" constant="53" id="LDe-oa-xoe"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="trailing" secondItem="pwT-7o-OVh" secondAttribute="trailing" id="Nf1-92-8RD"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="top" secondItem="ENg-ny-XH9" secondAttribute="bottom" constant="8" symbolic="YES" id="OSV-c6-u8v"/>
+                            <constraint firstItem="04D-bG-609" firstAttribute="leading" secondItem="ENg-ny-XH9" secondAttribute="leading" id="OTE-zX-4Za"/>
                             <constraint firstItem="3VK-i8-V1r" firstAttribute="centerX" secondItem="ENg-ny-XH9" secondAttribute="centerX" id="OwU-2S-LdV"/>
                             <constraint firstItem="ENg-ny-XH9" firstAttribute="top" secondItem="3VK-i8-V1r" secondAttribute="bottom" constant="24" id="Q7y-CP-B9o"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leading" id="QPw-9S-Lhe"/>
                             <constraint firstItem="3VK-i8-V1r" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leadingMargin" constant="50" id="Sse-mQ-ysF"/>
-                            <constraint firstItem="lmE-p7-n34" firstAttribute="top" secondItem="HYl-aG-PvE" secondAttribute="bottom" constant="66" id="TeT-tG-QRK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="04D-bG-609" secondAttribute="trailing" constant="97" id="VgK-9J-sz4"/>
+                            <constraint firstAttribute="trailing" secondItem="HYl-aG-PvE" secondAttribute="trailing" id="Vzj-z1-JAN"/>
                             <constraint firstItem="tqc-IA-9oP" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leadingMargin" id="ZZZ-RU-pxK"/>
-                            <constraint firstItem="HYl-aG-PvE" firstAttribute="trailing" secondItem="pwT-7o-OVh" secondAttribute="trailing" id="aR0-HR-7IJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="04D-bG-609" secondAttribute="trailing" constant="97" id="cje-4x-5OG"/>
                             <constraint firstItem="lmE-p7-n34" firstAttribute="top" secondItem="pwT-7o-OVh" secondAttribute="bottom" constant="4" id="dIr-06-ACc"/>
-                            <constraint firstAttribute="trailing" secondItem="HYl-aG-PvE" secondAttribute="trailing" id="fRw-CA-lFz"/>
-                            <constraint firstItem="HYl-aG-PvE" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leading" id="j3C-0h-n2x"/>
-                            <constraint firstItem="ENg-ny-XH9" firstAttribute="leading" secondItem="04D-bG-609" secondAttribute="leading" id="pmp-vd-npQ"/>
-                            <constraint firstItem="HYl-aG-PvE" firstAttribute="top" secondItem="04D-bG-609" secondAttribute="bottom" constant="2" id="rE3-of-uMh"/>
+                            <constraint firstItem="pwT-7o-OVh" firstAttribute="top" secondItem="04D-bG-609" secondAttribute="bottom" id="gWt-OG-0Ir"/>
+                            <constraint firstItem="04D-bG-609" firstAttribute="top" secondItem="HYl-aG-PvE" secondAttribute="bottom" constant="8" symbolic="YES" id="q7f-rO-B8g"/>
                             <constraint firstItem="3VK-i8-V1r" firstAttribute="top" secondItem="tqc-IA-9oP" secondAttribute="bottom" constant="49" id="teK-sX-w4I"/>
                             <constraint firstItem="XqS-nD-2SC" firstAttribute="trailing" secondItem="XpT-zn-S6w" secondAttribute="trailingMargin" id="uS0-Q4-GWl"/>
                             <constraint firstItem="tqc-IA-9oP" firstAttribute="top" secondItem="XqS-nD-2SC" secondAttribute="top" id="ukx-Gi-iCY"/>
