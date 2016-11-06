@@ -2,9 +2,8 @@
 //  StartScreenViewController.swift
 //  Hangman
 //
-//  Created by Shawn D'Souza on 3/3/16.
-//  Copyright © 2016 Shawn D'Souza. All rights reserved.
-//
+// Author: Alex Walczak
+
 
 import UIKit
 
@@ -21,6 +20,9 @@ class StartScreenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func returnToNewGameScreen(unwindSegue: UIStoryboardSegue) {
+
+    }
 
     /*
     // MARK: - Navigation

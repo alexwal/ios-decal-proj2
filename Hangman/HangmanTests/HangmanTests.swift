@@ -2,9 +2,6 @@
 //  HangmanTests.swift
 //  HangmanTests
 //
-//  Created by Shawn D'Souza on 3/3/16.
-//  Copyright © 2016 Shawn D'Souza. All rights reserved.
-//
 
 import XCTest
 @testable import Hangman

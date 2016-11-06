@@ -1,26 +1,187 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
+        <!--Start Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hangman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hto-DW-1mk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Frq-xM-2Aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="launch_screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-sR-hO4"/>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij8-8s-PMo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="E7h-Sq-duS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JRL-AP-2sG" kind="presentation" id="Pom-8q-o77"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hto-DW-1mk" firstAttribute="centerX" secondItem="cMu-sR-hO4" secondAttribute="centerX" id="Chl-Nk-3tN"/>
+                            <constraint firstItem="hto-DW-1mk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="Eyg-QA-DjN"/>
+                            <constraint firstItem="hto-DW-1mk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pu1-hp-fxD"/>
+                            <constraint firstItem="ij8-8s-PMo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="Sv4-xi-omq"/>
+                            <constraint firstItem="cMu-sR-hO4" firstAttribute="centerX" secondItem="ij8-8s-PMo" secondAttribute="centerX" id="UUU-VW-qtC"/>
+                            <constraint firstItem="ij8-8s-PMo" firstAttribute="top" secondItem="cMu-sR-hO4" secondAttribute="bottom" constant="52" id="Yfd-bj-qmJ"/>
+                            <constraint firstItem="cMu-sR-hO4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-18" id="iZS-mp-cgG"/>
+                            <constraint firstItem="hto-DW-1mk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="kPi-tB-8d7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ij8-8s-PMo" secondAttribute="bottom" constant="68" id="nNb-dt-XTx"/>
+                            <constraint firstItem="cMu-sR-hO4" firstAttribute="top" secondItem="hto-DW-1mk" secondAttribute="bottom" constant="10" id="rFd-Ey-FF5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="139"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="09I-Xj-iLS">
+            <objects>
+                <viewController id="JRL-AP-2sG" customClass="GameViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dsd-8e-skk"/>
+                        <viewControllerLayoutGuide type="bottom" id="lmE-p7-n34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XpT-zn-S6w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqc-IA-9oP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="o6B-zM-SgU"/>
+                                    <constraint firstAttribute="height" constant="61" id="t66-ZZ-TVo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KQ6-Z9-wyT" kind="unwind" unwindAction="returnToNewGameScreenWithUnwindSegue:" id="Cfq-fs-KwP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-nD-2SC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="G6g-Xh-X6a"/>
+                                    <constraint firstAttribute="height" constant="113" id="OQu-ma-cwU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="40"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOverButtonPressed:" destination="JRL-AP-2sG" eventType="touchUpInside" id="Z6z-WP-j4H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Guesses: " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwT-7o-OVh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="bvP-As-gWY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="______" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYl-aG-PvE">
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Single letter..." borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-i8-V1r">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="CL2-9J-Tvf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JRL-AP-2sG" id="hXy-Gz-Cq7"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-ny-XH9">
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Xoc-TE-6tE"/>
+                                    <constraint firstAttribute="width" constant="128" id="chv-zc-NdQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="41"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonPressed:" destination="JRL-AP-2sG" eventType="touchUpInside" id="y7u-mO-P6a"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="hangman1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="04D-bG-609">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="61u-oH-5Bp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85859375000000004" green="0.85859375000000004" blue="0.85859375000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tqc-IA-9oP" firstAttribute="top" secondItem="XpT-zn-S6w" secondAttribute="topMargin" constant="19" id="49U-i5-GFy"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="leading" secondItem="pwT-7o-OVh" secondAttribute="leading" id="6Nw-fY-EfX"/>
+                            <constraint firstItem="04D-bG-609" firstAttribute="top" secondItem="ENg-ny-XH9" secondAttribute="bottom" constant="42" id="H5P-ug-Buc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3VK-i8-V1r" secondAttribute="trailing" constant="53" id="LDe-oa-xoe"/>
+                            <constraint firstItem="3VK-i8-V1r" firstAttribute="centerX" secondItem="ENg-ny-XH9" secondAttribute="centerX" id="OwU-2S-LdV"/>
+                            <constraint firstItem="ENg-ny-XH9" firstAttribute="top" secondItem="3VK-i8-V1r" secondAttribute="bottom" constant="24" id="Q7y-CP-B9o"/>
+                            <constraint firstItem="3VK-i8-V1r" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leadingMargin" constant="50" id="Sse-mQ-ysF"/>
+                            <constraint firstItem="lmE-p7-n34" firstAttribute="top" secondItem="HYl-aG-PvE" secondAttribute="bottom" constant="66" id="TeT-tG-QRK"/>
+                            <constraint firstItem="tqc-IA-9oP" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leadingMargin" id="ZZZ-RU-pxK"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="trailing" secondItem="pwT-7o-OVh" secondAttribute="trailing" id="aR0-HR-7IJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="04D-bG-609" secondAttribute="trailing" constant="97" id="cje-4x-5OG"/>
+                            <constraint firstItem="lmE-p7-n34" firstAttribute="top" secondItem="pwT-7o-OVh" secondAttribute="bottom" constant="4" id="dIr-06-ACc"/>
+                            <constraint firstAttribute="trailing" secondItem="HYl-aG-PvE" secondAttribute="trailing" id="fRw-CA-lFz"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="leading" secondItem="XpT-zn-S6w" secondAttribute="leading" id="j3C-0h-n2x"/>
+                            <constraint firstItem="ENg-ny-XH9" firstAttribute="leading" secondItem="04D-bG-609" secondAttribute="leading" id="pmp-vd-npQ"/>
+                            <constraint firstItem="HYl-aG-PvE" firstAttribute="top" secondItem="04D-bG-609" secondAttribute="bottom" constant="2" id="rE3-of-uMh"/>
+                            <constraint firstItem="3VK-i8-V1r" firstAttribute="top" secondItem="tqc-IA-9oP" secondAttribute="bottom" constant="49" id="teK-sX-w4I"/>
+                            <constraint firstItem="XqS-nD-2SC" firstAttribute="trailing" secondItem="XpT-zn-S6w" secondAttribute="trailingMargin" id="uS0-Q4-GWl"/>
+                            <constraint firstItem="tqc-IA-9oP" firstAttribute="top" secondItem="XqS-nD-2SC" secondAttribute="top" id="ukx-Gi-iCY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hangmanImage" destination="04D-bG-609" id="WzC-8Q-KyE"/>
+                        <outlet property="incorrectGuessesLabel" destination="pwT-7o-OVh" id="gI1-VS-yue"/>
+                        <outlet property="remainingLettersLabel" destination="HYl-aG-PvE" id="8nc-xO-Yaa"/>
+                        <outlet property="textField" destination="3VK-i8-V1r" id="vYg-BR-Cm6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1K2-Rn-JYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KQ6-Z9-wyT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1152.8" y="113.79310344827587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hangman1.gif" width="100" height="100"/>
+        <image name="launch_screen.jpg" width="394" height="422"/>
+    </resources>
 </document>
