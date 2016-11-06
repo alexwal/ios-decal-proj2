@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47055CFB1DCF141B0071F99C /* launch_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch_screen.jpg; path = "../../../../Documents/Job Apps 2016/launch_screen.jpg"; sourceTree = "<group>"; };
+		47055CFB1DCF141B0071F99C /* launch_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch_screen.jpg; path = "basic-hangman-img/launch_screen.jpg"; sourceTree = "<group>"; };
 		EC9310451C891F2C00BE736C /* hangman1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman1.gif; path = "basic-hangman-img/hangman1.gif"; sourceTree = "<group>"; };
 		EC9310461C891F2C00BE736C /* hangman2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman2.gif; path = "basic-hangman-img/hangman2.gif"; sourceTree = "<group>"; };
 		EC9310471C891F2C00BE736C /* hangman3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman3.gif; path = "basic-hangman-img/hangman3.gif"; sourceTree = "<group>"; };
